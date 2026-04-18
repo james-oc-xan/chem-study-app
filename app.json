@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "gf-study-app",
-    "slug": "gf-study-app",
+    "name": "gf-expo-8O5kAd",
+    "slug": "gf-expo-8O5kAd",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,10 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSCameraUsageDescription": "Allow gf-study-app to use your camera for chemistry study tasks."
-      }
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
@@ -28,14 +25,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow gf-study-app to use your camera for chemistry study tasks."
-        }
-      ]
-    ]
+    }
   }
 }
