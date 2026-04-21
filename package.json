@@ -1,5 +1,5 @@
 {
-  "name": "gf-study-app",
+  "name": "gf-study-app-scaffold",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {

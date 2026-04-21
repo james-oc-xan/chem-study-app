@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "GF Study App",
-    "slug": "gf-study-app",
+    "name": "gf-study-app-scaffold",
+    "slug": "gf-study-app-scaffold",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,14 +25,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow GF Study App to access your camera for chemistry study tools."
-        }
-      ]
-    ]
+    }
   }
 }
