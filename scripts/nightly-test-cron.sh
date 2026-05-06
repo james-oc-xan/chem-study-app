@@ -34,9 +34,13 @@ fi
 npm run generate-tests
 npm run test:ci
 
-if git diff --quiet; then
-  local_msg="${TIMESTAMP} – No changes detected."
+STATUS_OUTPUT="$(git status --porcelain)"
+NON_LOG_CHANGES="$(echo "$STATUS_OUTPUT" | grep -vE '^.. \\.logs/' || true)"
+
+if [ -z "$STATUS_OUTPUT" ] || [ -z "$NON_LOG_CHANGES" ]; then
+  local_msg="${TIMESTAMP} – No code/test changes detected."
   echo "$local_msg" | tee -a "$LOG_DIR/nightly-test-log.md"
+  git checkout -- .logs 2>/dev/null || true
   echo "::NO_CHANGES::"
   exit 0
 fi
